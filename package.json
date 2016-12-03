@@ -2,7 +2,7 @@
   "name": "dss",
   "version": "1.0.0",
   "description": "Dynamic Style Sheets",
-  "main": "compiler.js",
+  "main": "lesser.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
