@@ -1,0 +1,19 @@
+<syntax>     ::= <varExp> <syntax> | <expression> <syntax> | EOF
+<expression> ::= #<string> { <property> } | .<string> { <property> } | <string> { <property> }
+<property>   ::= <string>: <string>; <property> | <string>: <variable>; <property> | epsilon
+<varExp>     ::= <variable> = <string>;
+<variable>   ::= @<string>
+<string>     ::= a-zA-Z0-9 <string> | epsilon
+
+// -----------------
+@blah = sfs;
+@blah2 = s3f; 
+
+#blak {
+    blakd: adlkj;
+    balkjd: adlkj;
+}
+
+.sflkj {
+    blkjd: sdlk;
+}
